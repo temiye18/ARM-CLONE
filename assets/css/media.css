@@ -1,0 +1,161 @@
+@media (max-width: 1195px) {
+  .top-header {
+    display: none;
+  }
+
+  .nav-link__list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* .nav-link__links.get__started {
+    padding: 0.35em 1em;
+  } */
+  .trade__online {
+    display: none;
+  }
+  .nav-image__container {
+    width: 25%;
+  }
+
+  .nav-link__items {
+    padding: 1.2em 0;
+    /* text-transform: uppercase; */
+  }
+
+  .show {
+    display: flex;
+    align-items: flex-start;
+    height: auto;
+  }
+  .nav--row {
+    justify-content: space-between;
+  }
+  .harmbugger-menu {
+    display: block;
+  }
+}
+
+@media (max-width: 614px) {
+  .container {
+    width: 90%;
+  }
+
+  .showcase {
+    min-height: 100vh;
+    background-position: -80rem 0;
+  }
+  .showcase__text {
+    display: none;
+  }
+
+  .showcase__mobile {
+    display: block;
+  }
+  .services__items {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .services__items .col {
+    width: 100%;
+  }
+
+  .securities .row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .securities__col {
+    width: 100%;
+  }
+
+  .securities__text {
+    margin-top: 3em;
+  }
+
+  .updates__items {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .updates__items .item {
+    width: 100%;
+  }
+
+  .subscribe {
+    min-height: 500px;
+  }
+
+  .subscribe__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input {
+    width: 100%;
+    border-radius: 3px;
+  }
+  .subscribe__button {
+    width: 100%;
+    margin: 2em 0;
+    border-radius: 3px;
+  }
+
+  .sign-up {
+    min-height: 400px;
+  }
+
+  .sign-up__content {
+    flex-direction: column;
+  }
+
+  .contact__us {
+    width: 100%;
+    margin-left: 0;
+  }
+  .sign-up__contact {
+    width: 100%;
+    border-radius: 3px;
+  }
+
+  .footer__row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rights-socials {
+    width: 100%;
+  }
+
+  .follow__us {
+    margin-top: 0;
+    display: grid;
+    text-align: center;
+    place-items: center;
+  }
+
+  .hide-text {
+    display: none;
+  }
+
+  .show-text {
+    display: block;
+  }
+  .quick--link__box {
+    padding: 3em 0;
+    text-align: center;
+    width: 100%;
+  }
+  .quick--link__list {
+    padding: 0;
+  }
+  .quick--link__list + .quick--link__list {
+    justify-content: space-between;
+  }
+}

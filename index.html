@@ -10,7 +10,15 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/media.css" />
     <title>Arm landing page clone</title>
   </head>
   <body>
@@ -36,48 +44,51 @@
 
     <!--======NAV SECTION=======-->
     <nav class="nav-section">
-      <div class="container row">
+      <div class="container row nav--row">
         <div class="nav-image__container">
           <img src="./images/logo.png" alt="Arm Logo" />
         </div>
-        <div class="nav-link__box">
-          <ul class="nav-link__list row">
-            <li class="nav-link__items">
-              <a href="#" class="nav-link__links">Home</a>
-            </li>
-            <li class="nav-link__items">
-              <a href="#" class="nav-link__links"
-                >About us<img src="./images/dropdown.png" alt="drop down"
-              /></a>
-            </li>
-            <li class="nav-link__items">
-              <a href="#" class="nav-link__links"
-                >Accounts<img src="./images/dropdown.png" alt="drop down"
-              /></a>
-            </li>
-            <li class="nav-link__items">
-              <a href="#" class="nav-link__links"
-                >Services<img src="./images/dropdown.png" alt="drop down"
-              /></a>
-            </li>
-            <li class="nav-link__items">
-              <a href="#" class="nav-link__links">Updates</a>
-            </li>
-            <li class="nav-link__items">
-              <a href="#" class="nav-link__links"
-                ><img src="./images/search.png" alt="search icon"
-              /></a>
-            </li>
-            <li class="nav-link__items">
-              <a href="#" class="nav-link__links trade__online">Trade online</a>
-            </li>
-            <li class="nav-link__items">
-              <a href="#" class="nav-link__links trade__online get__started"
-                >Get started</a
-              >
-            </li>
-          </ul>
-        </div>
+
+        <button id="harmbugger" class="harmbugger-menu">
+          <i class="fas fa-bars bar-icon"></i>
+        </button>
+
+        <ul class="nav-link__list">
+          <li class="nav-link__items">
+            <a href="#" class="nav-link__links">Home</a>
+          </li>
+          <li class="nav-link__items">
+            <a href="#" class="nav-link__links"
+              >About us<img src="./images/dropdown.png" alt="drop down"
+            /></a>
+          </li>
+          <li class="nav-link__items">
+            <a href="#" class="nav-link__links"
+              >Accounts<img src="./images/dropdown.png" alt="drop down"
+            /></a>
+          </li>
+          <li class="nav-link__items">
+            <a href="#" class="nav-link__links"
+              >Services<img src="./images/dropdown.png" alt="drop down"
+            /></a>
+          </li>
+          <li class="nav-link__items">
+            <a href="#" class="nav-link__links">Updates</a>
+          </li>
+          <li class="nav-link__items">
+            <a href="#" class="nav-link__links"
+              ><img src="./images/search.png" alt="search icon"
+            /></a>
+          </li>
+          <li class="nav-link__items">
+            <a href="#" class="nav-link__links trade__online">Trade online</a>
+          </li>
+          <li class="nav-link__items">
+            <a href="#" class="nav-link__links trade__online get__started"
+              >Get started</a
+            >
+          </li>
+        </ul>
       </div>
     </nav>
 
@@ -92,6 +103,23 @@
             Become your own stockbroker, trade on the go
           </p>
           <a href="#" class="showcase__link">Get started</a>
+        </div>
+
+        <!--========ONLY SHOW ON MOBILE =======-->
+        <div class="showcase__mobile">
+          <h1 class="showcase__title">
+            Does your Stockbroker have location constraints?
+          </h1>
+          <p class="showcase__body">
+            Become your own stockbroker, trade on the go
+          </p>
+
+          <div class="link-container">
+            <a href="#" class="showcase__link get__started">Get started</a>
+          </div>
+          <div class="link-container">
+            <a href="#" class="showcase__link get__online">Trade online</a>
+          </div>
         </div>
       </div>
     </section>
@@ -253,89 +281,97 @@
         </form>
       </div>
     </div>
-  </body>
 
-  <!--============ SIGN-UP SECTION =========-->
-  <section class="sign-up">
-    <div class="container sign-up__content">
-      <h3 class="sign-up__text">
-        Interested in Signing up? Need a reliable Stockbroker?
-      </h3>
-      <div class="contact__us">
-        <a href="#" class="sign-up__contact">Contact us</a>
+    <!--============ SIGN-UP SECTION =========-->
+    <section class="sign-up">
+      <div class="container sign-up__content">
+        <h3 class="sign-up__text">
+          Interested in Signing up? Need a reliable Stockbroker?
+        </h3>
+        <div class="contact__us">
+          <a href="#" class="sign-up__contact">Contact us</a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="footer">
-    <div class="container footer__row">
-      <!--=====copyrights and social-media =============-->
-      <div class="rights-socials">
-        <p class="rights__text">
+    <footer class="footer">
+      <div class="container footer__row">
+        <!--=====copyrights and social-media =============-->
+        <div class="rights-socials">
+          <p class="rights__text hide-text">
+            © 2021 ARM Securities. Ltd. All rights reserved. A subsidiary of
+            Asset & Resource Management Holding Company (ARM) Limited. All
+            rights reserved. WHISTLEBLOWING | Make a Complaint
+          </p>
+          <div class="follow__us">
+            <h4 class="follow__us__text">Follow us on social media</h4>
+            <div class="our__socials">
+              <div class="twitter socials">
+                <a href="#">
+                  <img src="./images/twitter.png" alt="twitter icon" />
+                </a>
+              </div>
+
+              <div class="facebook socials">
+                <a href="#">
+                  <img src="./images/facebook.png" alt="twitter icon" />
+                </a>
+              </div>
+
+              <div class="youtube socials">
+                <a href="#">
+                  <img src="./images/youtube.png" alt="twitter icon" />
+                </a>
+              </div>
+
+              <div class="linkedin socials">
+                <a href="#">
+                  <img src="./images/linkedin.png" alt="twitter icon" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--====== our quick links =========-->
+        <div class="our-links">
+          <div class="quick--link__box">
+            <ul class="quick--link__list">
+              <h6 class="quick--link__header">Quick Links</h6>
+              <li class="quick--link__items">
+                <a href="#" class="accounts links">Accounts</a>
+              </li>
+              <li class="quick--link__items">
+                <a href="#" class="services links">Services</a>
+              </li>
+              <li class="quick--link__items">
+                <a href="#" class="my-updates links">Updates</a>
+              </li>
+            </ul>
+
+            <ul class="quick--link__list">
+              <h6 class="quick--link__header">Resources</h6>
+              <li class="quick--link__items">
+                <a href="#" class="faq links">FAQ</a>
+              </li>
+              <li class="quick--link__items">
+                <a href="#" class="contact__me links">Contact us</a>
+              </li>
+              <li class="quick--link__items">
+                <a href="#" class="downloads links">Download records</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="rights__text show-text">
           © 2021 ARM Securities. Ltd. All rights reserved. A subsidiary of Asset
           & Resource Management Holding Company (ARM) Limited. All rights
           reserved. WHISTLEBLOWING | Make a Complaint
         </p>
-        <div class="follow__us">
-          <h4 class="follow__us__text">Follow us on social media</h4>
-          <div class="our__socials">
-            <div class="twitter socials">
-              <a href="#">
-                <img src="./images/twitter.png" alt="twitter icon" />
-              </a>
-            </div>
-
-            <div class="facebook socials">
-              <a href="#">
-                <img src="./images/facebook.png" alt="twitter icon" />
-              </a>
-            </div>
-
-            <div class="youtube socials">
-              <a href="#">
-                <img src="./images/youtube.png" alt="twitter icon" />
-              </a>
-            </div>
-
-            <div class="linkedin socials">
-              <a href="#">
-                <img src="./images/linkedin.png" alt="twitter icon" />
-              </a>
-            </div>
-          </div>
-        </div>
       </div>
+    </footer>
 
-      <!--====== our quick links =========-->
-      <div class="our-links">
-        <div class="quick--link__box">
-          <ul class="quick--link__list">
-            <h6 class="quick--link__header">Quick Links</h6>
-            <li class="quick--link__items">
-              <a href="#" class="accounts links">Accounts</a>
-            </li>
-            <li class="quick--link__items">
-              <a href="#" class="services links">Services</a>
-            </li>
-            <li class="quick--link__items">
-              <a href="#" class="my-updates links">Updates</a>
-            </li>
-          </ul>
-
-          <ul class="quick--link__list">
-            <h6 class="quick--link__header">Resources</h6>
-            <li class="quick--link__items">
-              <a href="#" class="faq links">FAQ</a>
-            </li>
-            <li class="quick--link__items">
-              <a href="#" class="contact__me links">Contact us</a>
-            </li>
-            <li class="quick--link__items">
-              <a href="#" class="downloads links">Download records</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
+    <script src="script.js"></script>
+  </body>
 </html>

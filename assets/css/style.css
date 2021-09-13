@@ -27,7 +27,7 @@ body {
 
 .row {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 ul {
@@ -45,7 +45,6 @@ img {
 /* TOP HEADER SECTION */
 .top-header {
   background-color: var(--unique-color);
-  /* padding: 0em 0; */
 }
 
 .top-header__nav--container {
@@ -59,7 +58,7 @@ img {
 
 .top-header-nav__link {
   color: var(--dark-color);
-  font-size: 1rem;
+  font-size: 0.85rem;
   padding: 0 0.7em;
 }
 
@@ -68,14 +67,27 @@ img {
   padding: 1em 0;
 }
 
+.nav--row {
+  flex-wrap: wrap;
+}
 .nav-link__list {
+  display: flex;
   justify-content: center;
   align-items: center;
+  /* margin-left: auto; */
 }
 
-.nav-link__box {
-  margin-left: auto;
+.harmbugger-menu {
+  display: none;
+  border: none;
+  background: transparent;
 }
+
+.bar-icon {
+  font-size: 2.5rem;
+  color: var(--dark-color);
+}
+
 .nav-link__items {
   padding: 0 0.7em;
 }
@@ -97,10 +109,10 @@ img {
   background-color: var(--blue-text);
   color: #fff;
   padding: 0.35em 0.65em;
-  transition: all 0.5s ease-out;
 }
 
 .trade__online:hover {
+  transition: 0.5s ease-out;
   box-shadow: 1px 1px 6px rgba(59, 110, 143, 0.8);
 }
 
@@ -129,6 +141,44 @@ img {
   font-size: 2rem;
   font-weight: 200;
   margin-top: 0;
+}
+
+.showcase__mobile {
+  display: none;
+  background-color: #f9f9f9;
+  padding: 4em 2em;
+  border-radius: 3px;
+  margin-top: 36rem;
+}
+.showcase__mobile h1 {
+  font-size: 1.7rem;
+  color: var(--dark-color);
+  font-weight: 600;
+  width: 100%;
+}
+
+.showcase__mobile .link-container {
+  width: 100%;
+}
+
+.showcase__mobile .showcase__link {
+  font-size: 1.1rem;
+  width: 100%;
+  text-align: center;
+  background-color: var(--blue-text);
+  margin: 5px 0;
+}
+
+.showcase__mobile .get__online {
+  background-color: transparent;
+  color: var(--blue-text);
+  border: 1px solid var(--blue-text);
+}
+
+.showcase__mobile p {
+  color: var(--dark-color);
+  font-size: 1.2rem;
+  width: 100%;
 }
 
 .showcase__link {
@@ -373,6 +423,13 @@ img {
   font-weight: 200;
 }
 
+.show-text {
+  display: none;
+}
+
+.hide-text {
+  display: block;
+}
 .follow__us {
   margin-top: 3em;
 }
