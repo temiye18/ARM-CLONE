@@ -43,13 +43,24 @@
   }
 
   .showcase {
+    background-image: url("../../images/Landing\ \ image.png");
+    /* background-position: -65rem 0; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 60% 0;
+    display: flex;
+    place-items: center;
+    margin: 0;
+    color: #fff;
     min-height: 100vh;
-    background-position: -80rem 0;
   }
   .showcase__text {
     display: none;
   }
 
+  .bar-icon {
+    font-size: 1.5rem;
+  }
   .showcase__mobile {
     display: block;
   }
@@ -114,6 +125,10 @@
     flex-direction: column;
   }
 
+  .sign-up__text {
+    width: 100%;
+  }
+
   .contact__us {
     width: 100%;
     margin-left: 0;
@@ -157,5 +172,73 @@
   }
   .quick--link__list + .quick--link__list {
     justify-content: space-between;
+  }
+}
+
+/* MOBILE SCREENS */
+
+@media (max-width: 420px) {
+  .nav-link__links {
+    font-size: 1rem;
+  }
+  .showcase__mobile h1 {
+    font-size: 1.2rem;
+  }
+
+  .showcase__mobile p {
+    font-size: 17px;
+  }
+  .showcase__mobile .showcase__link {
+    padding: 0.7em 3em;
+    font-size: 0.8rem;
+  }
+
+  .services__image img {
+    width: 58px;
+    height: 58px;
+  }
+
+  .services h2,
+  .securities h2 {
+    font-size: 1.4rem;
+  }
+
+  .services p,
+  .securities p {
+    font-size: 1rem;
+  }
+
+  .securities__find {
+    padding: 0.7em 2em;
+  }
+
+  .subscribe__text,
+  .sign-up__text {
+    font-size: 1.85rem;
+  }
+  .sign-up__contact {
+    font-size: 0.9rem;
+  }
+
+  .learn__more {
+    font-size: 0.8rem;
+  }
+
+  .follow__us__text {
+    font-size: 1.2rem;
+  }
+
+  .socials {
+    padding: 9px;
+  }
+
+  .socials img {
+    width: 25px;
+    height: 19px;
+  }
+
+  .footer .show-text,
+  .footer .links {
+    font-size: 14px;
   }
 }

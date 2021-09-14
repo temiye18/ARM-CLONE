@@ -146,9 +146,9 @@ img {
 .showcase__mobile {
   display: none;
   background-color: #f9f9f9;
-  padding: 4em 2em;
+  padding: 1em 2em;
   border-radius: 3px;
-  margin-top: 36rem;
+  margin-top: 17.5rem;
 }
 .showcase__mobile h1 {
   font-size: 1.7rem;
@@ -382,6 +382,7 @@ img {
 .sign-up__text {
   font-size: 2rem;
   font-weight: 600;
+  width: 60%;
 }
 
 .contact__us {
